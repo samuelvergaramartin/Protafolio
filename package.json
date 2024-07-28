@@ -2,6 +2,8 @@
   "name": "portafolio",
   "type": "module",
   "version": "0.0.1",
+  "author": "Samuel Vergara Martín",
+  "description": "Mi primer portafolio profesional",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
