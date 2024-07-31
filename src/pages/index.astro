@@ -1,31 +1,14 @@
 ---
-console.log("GET - /");
+import Sam170703DevLayout from "../layouts/Sam170703dev-Layout.astro"
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Vergara Martín</title>
-</head>
-<body>
-    <div id="container">
-        <h1>Página web en desarrollo. Disponible muy pronto</h1>
-    </div>
-</body>
-<style>
-    :root {
-        color-scheme: dark light;
-    }
-
-    #container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        color: red;
-    }
-</style>
-</html>
+<Sam170703DevLayout title="SVM" page="Inicio">
+    <main>
+        <h1>Hola mundo! Este es mi Layout Custom</h1>
+        <style>
+            h1 {
+                text-align: center;
+                color: cyan;
+            }
+        </style>
+    </main>
+</Sam170703DevLayout>
