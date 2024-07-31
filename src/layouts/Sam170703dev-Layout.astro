@@ -1,0 +1,28 @@
+---
+import Menu from '../components/Menu.astro';
+
+interface Props {
+    title: string,
+    page: string
+}
+
+const { title, page } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} - {page}</title>
+    <style>
+        :root {
+            color-scheme: dark light;
+        }
+    </style>
+</head>
+<body>
+    <Menu />
+    <slot />
+</body>
+</html>
